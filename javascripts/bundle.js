@@ -11,7 +11,7 @@ gitform.getData = function(){
     testElement.innerHTML = `
     <img class="avatar_url" src="${gitform.getAvatar(responseJSON)}" alt="Lauren's profile picture" />
     <h2>
-      ${gitform.getLogin(responseJSON)} 
+      ${gitform.getLogin(responseJSON)}
     </h2>
     <p>
       (${gitform.getUserType(responseJSON)})
@@ -20,7 +20,8 @@ gitform.getData = function(){
       ${gitform.getLocation(responseJSON)}
     </h4>
     <h4>
-      <a href="mailto:${gitform.getEmail(responseJSON)}">${gitform.getEmail(responseJSON)}</a>
+      <a href="mailto:${gitform.getEmail(responseJSON)}">
+      ${gitform.getEmail(responseJSON)}</a>
     </h4>
     <h4>
       ${gitform.getHireable(responseJSON)}
@@ -37,7 +38,7 @@ gitform.getData = function(){
 var gitform = require("./gitform.js");
 
 document.addEventListener("DOMContentLoaded", function(){
-  gitform.getData();
+  gitform.grabData();
 });
 
 },{"./gitform.js":1}]},{},[2]);
