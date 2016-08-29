@@ -38,7 +38,7 @@ gitform.getData = function(){
 var gitform = require("./gitform.js");
 
 document.addEventListener("DOMContentLoaded", function(){
-  gitform.grabData();
+  gitform.getData();
 });
 
 },{"./gitform.js":1}]},{},[2]);
